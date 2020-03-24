@@ -1,8 +1,9 @@
 {
   "name": "bool-network-js",
   "version": "0.2.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Bool Network js api",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
@@ -14,7 +15,11 @@
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags"
   },
-  "author": "",
+  "keywords": [
+    "Bool Network",
+    "Substrate"
+  ],
+  "author": "kayryu",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^25.1.4",
