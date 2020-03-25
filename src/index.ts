@@ -1,4 +1,22 @@
+import * as polkaApi from '@polkadot/api';
+import { ApiOptions } from '@polkadot/api/types';
+import { rpc } from './rpc';
+import { customType } from './type';
+
 export const Greeter = (name: string) => `Hello ${name}`;
+
+export const tom: [string, number] = ['Tom', 25];
+
+export const BoolApi = async (url: string) => {
+    const provider = new polkaApi.WsProvider('ws://127.0.0.1:9944/');
+    const options: ApiOptions = {
+        types: customType,
+        provider: provider,
+        rpc: rpc
+    }
+    const api = await polkaApi.ApiPromise.create(options);
+    return api;
+}
 
 
 /**
@@ -7,10 +25,9 @@ export const Greeter = (name: string) => `Hello ${name}`;
 let api = new BoolApi({option});
 
 #. how to use?
-    * state
-    api.getName()
-    api.get...() not better
+    * The original function does not change
 
-    api.tx.send()
-
+    * Add extension module to fetch some complex state.
+    example  api.extension.dex.send()
+    
  */
