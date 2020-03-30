@@ -5,7 +5,9 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "yarn generate:defs && yarn generate:meta",
+    "generate:defs": "ts-node --skip-project node_modules/.bin/polkadot-types-from-defs --package bool-network-js/interfaces --input ./src/interfaces",
+    "generate:meta": "ts-node --skip-project node_modules/.bin/polkadot-types-from-chain --package bool-network-js/interfaces --endpoint ./bool.json --output ./src/interfaces",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
     "test": "jest --config jestconfig.json",
@@ -22,21 +24,12 @@
   "author": "kayryu",
   "license": "ISC",
   "dependencies": {
-    "@polkadot/api": "^1.8.0-beta.1",
-    "@polkadot/api-contract": "^1.8.0-beta.1",
-    "@polkadot/keyring": "^2.6.2",
-    "@polkadot/types": "^1.8.0-beta.1",
-    "@polkadot/util": "^2.6.2",
-    "@polkadot/util-crypto": "^2.6.2"
+    "@polkadot/api": "^1.8.1"
   },
   "devDependencies": {
-    "@types/jest": "^25.1.4",
-    "jest": "^25.1.0",
-    "prettier": "^2.0.2",
-    "ts-jest": "^25.2.1",
-    "tslint": "^6.1.0",
-    "tslint-config-prettier": "^1.18.0",
-    "typescript": "^3.8.3"
+    "@polkadot/typegen": "^1.8.1",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.2"
   },
   "files": [
     "lib/**/*"
