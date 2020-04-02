@@ -1,2 +1,11 @@
 export { default as btcBridge } from './dex/definitions';
 export { default as dex } from './dex/definitions';
+export { default as authorx } from './authorx/definitions';
+export { default as citaBridge } from './citaBridge/definitions';
+export { default as dao } from './dao/definitions';
+export { default as ethBridge } from './ethBridge/definitions';
+export { default as feed } from './feed/definitions';
+export { default as genericErc20 } from './genericErc20/definitions';
+export { default as stablecoin } from './stablecoin/definitions';
+export { default as token } from './token/definitions';
+export { default as witness } from './witness/definitions';
