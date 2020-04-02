@@ -9,16 +9,17 @@ export default {
             receipts_root: 'Vec<u8>',
             hash: 'Vec<u8>'
         },
+
         Authorities: {
             _enum: {
                 SameAs: 'u64',
-                NewList: 'Vec<[u8; 20], AuthoritiesChangeType>'
+                NewList: '(Vec<H160>, AuthoritiesChangeType)'
             }
         },
         AuthoritiesChangeType: {
             _enum: {
-                AddAuthority: '[u8; 20]',
-                DeleteAuthority: '[u8; 20]',
+                AddAuthority: 'H160',
+                DeleteAuthority: 'H160',
                 Init: 'Null'
             }
         },

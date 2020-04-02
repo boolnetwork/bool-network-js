@@ -25,14 +25,14 @@ export default {
         },
         BTCTxLog: {
             who: 'AccountId',
-            addr: 'Address',
+            addr: 'BtcAddress',
             tx_type: 'TxType',
             balance: 'u64',
             block_hash: 'H256',
             time: 'BlockNumber',
             tx: 'BTCTransaction'
         },
-        Address: {
+        BtcAddress: {
             kind: 'Type',
             network: 'NetWork',
             hash: 'AddressHash'
@@ -64,9 +64,9 @@ export default {
         WithdrawRecord: {
             who: 'AccountId',
             amount: 'u128',
-            add: 'Address',
+            add: 'BtcAddress',
             uid: 'u64',
-            is_fin: 'bool',
+            is_fin: 'bool'
         }
     }
 };

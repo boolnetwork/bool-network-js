@@ -1,4 +1,4 @@
-export { default as btcBridge } from './dex/definitions';
+export { default as btcBridge } from './btcBridge/definitions';
 export { default as dex } from './dex/definitions';
 export { default as authorx } from './authorx/definitions';
 export { default as citaBridge } from './citaBridge/definitions';

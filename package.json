@@ -21,7 +21,7 @@
     "Bool Network",
     "Substrate"
   ],
-  "author": "kayryu",
+  "author": "abmatrix",
   "license": "ISC",
   "dependencies": {
     "@polkadot/api": "^1.8.1"

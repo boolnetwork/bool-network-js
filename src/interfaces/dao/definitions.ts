@@ -12,7 +12,7 @@ export default {
             creator: 'AccountId',
             deposit: 'Balance',
         },
-        List: {
+        DaoList: {
             prev: 'u64',
             next: 'u64'
         }
