@@ -1,9 +1,11 @@
 // Auto-generated via `yarn polkadot-types-from-defs`, do not edit
 /* eslint-disable */
 
-import { Enum, Struct, Vec } from '@polkadot/types/codec';
+import { ITuple } from '@polkadot/types/types';
+import { Enum, Option, Struct, Vec } from '@polkadot/types/codec';
 import { Bytes, u128, u32, u64 } from '@polkadot/types/primitive';
 import { AccountId, BlockNumber, Permill } from '@polkadot/types/interfaces/runtime';
+import { Bid } from '@polkadot/types/interfaces/society';
 
 /** @name AmountType */
 export interface AmountType extends u128 {}
@@ -43,6 +45,24 @@ export interface DepthInfo extends Struct {
 export interface DepthItem extends Struct {
   readonly price: u64;
   readonly total: u64;
+}
+
+/** @name MultiNodeIndex */
+export interface MultiNodeIndex extends Struct {
+  readonly index: u128;
+  readonly multi_key: ITuple<[OrderPair, OrderType]>;
+}
+
+/** @name Node */
+export interface Node extends Struct {
+  readonly prev: Option<u128>;
+  readonly next: Option<u128>;
+  readonly data: Bid;
+}
+
+/** @name NodeIndex */
+export interface NodeIndex extends Struct {
+  readonly index: u128;
 }
 
 /** @name OrderInfo */

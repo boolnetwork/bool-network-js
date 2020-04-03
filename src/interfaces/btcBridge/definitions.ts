@@ -64,12 +64,49 @@ export default {
             value: 'u64',
             script_pubkey: 'Bytes'
         },
-        WithdrawRecord: {
+        WithdrawRecordT: {
             who: 'AccountId',
             amount: 'u128',
             add: 'BtcAddress',
             uid: 'u64',
             is_fin: 'bool'
+        },
+        BestHeader: {
+            number: 'u64',
+            hash: 'H256'
+        },
+        BlockHeader: {
+            version: 'u32',
+            previous_header_hash: 'H256',
+            merkle_root_hash: 'H256',
+            time: 'u32',
+            bits: 'Compact<u32>',
+            nonce: 'u32',
+        },
+        BlockHeaderu32: {
+            version: 'u32',
+            previous_header_hash: 'H256',
+            merkle_root_hash: 'H256',
+            time: 'u32',
+            bits: 'u32',
+            nonce: 'u32',
+        },
+        TransportRelayTx: {
+            block_hash: 'H256',
+            raw: 'BTCTransaction',
+            merkle_proof: 'PartialMerkleTreeForTransport',
+            previous_raw: 'BTCTransaction'
+        },
+        PartialMerkleTreeForTransport: {
+            tx_count: 'u32',
+            hashes: 'Vec<H256>',
+            flags: 'Vec<u8>'
+        },
+        UTXO: {
+            txid: 'H256',
+            index: 'u32',
+            balance: 'u64',
+            is_spent: 'bool'
         }
     }
 };

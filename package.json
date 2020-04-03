@@ -6,7 +6,6 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "pub": "tsc",
-    "pubt": "polkadot-dev-build-ts",
     "build": "yarn generate:defs ",
     "generate:defs": "ts-node --skip-project node_modules/.bin/polkadot-types-from-defs --package bool-network-js/interfaces --input ./src/interfaces",
     "generate:meta": "ts-node --skip-project node_modules/.bin/polkadot-types-from-chain --package bool-network-js/interfaces --endpoint ./bool.json --output ./src/interfaces",

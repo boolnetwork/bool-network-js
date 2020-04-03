@@ -60,6 +60,18 @@ export default {
         DepthItem: {
             price: 'u64',
             total: 'u64'
+        },
+        MultiNodeIndex: {
+            index: 'u128',
+            multi_key: '(OrderPair, OrderType)'
+        },
+        Node: {
+            prev: 'Option<u128>',
+            next: 'Option<u128>',
+            data: 'Bid'
+        },
+        NodeIndex: {
+            index: 'u128'
         }
     },
     rpc: {

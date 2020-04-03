@@ -48,6 +48,9 @@ export interface PawnType extends Struct {
   readonly lock: Balance;
 }
 
+/** @name Time */
+export interface Time extends Moment {}
+
 /** @name Vault */
 export interface Vault extends Struct {
   readonly pawn: Balance;

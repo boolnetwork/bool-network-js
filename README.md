@@ -1,7 +1,8 @@
 # Bool Network js
 
+
 ## TODO
 
-- [ ] types
+- [x] types
 - [ ] test : add module testing ? or integration testing
 - [ ] docs
