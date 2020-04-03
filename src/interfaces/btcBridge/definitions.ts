@@ -33,12 +33,15 @@ export default {
             tx: 'BTCTransaction'
         },
         BtcAddress: {
-            kind: 'Type',
+            kind: 'ScriptType',
             network: 'NetWork',
             hash: 'AddressHash'
         },
+        NetWork: {
+            _enum: ['Main', 'Test']
+        },
         AddressHash: 'H160',
-        Type: {
+        ScriptType: {
             _enum: ['P2PKH', 'P2SH']
         },
         BTCTransaction: {

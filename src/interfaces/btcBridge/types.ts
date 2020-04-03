@@ -11,7 +11,7 @@ export interface AddressHash extends H160 {}
 
 /** @name BtcAddress */
 export interface BtcAddress extends Struct {
-  readonly kind: Type;
+  readonly kind: ScriptType;
   readonly network: NetWork;
   readonly hash: AddressHash;
 }
@@ -45,6 +45,12 @@ export interface CandidateTx extends Struct {
   readonly uid: Vec<u64>;
 }
 
+/** @name NetWork */
+export interface NetWork extends Enum {
+  readonly isMain: boolean;
+  readonly isTest: boolean;
+}
+
 /** @name OutPoint */
 export interface OutPoint extends Struct {
   readonly hash: H256;
@@ -63,6 +69,12 @@ export interface Params extends Struct {
   readonly retargeting_interval: u32;
   readonly min_timespan: u32;
   readonly max_timespan: u32;
+}
+
+/** @name ScriptType */
+export interface ScriptType extends Enum {
+  readonly isP2Pkh: boolean;
+  readonly isP2Sh: boolean;
 }
 
 /** @name TransactionInput */
@@ -87,12 +99,6 @@ export interface TxType extends Enum {
   readonly isRegisterDeposit: boolean;
   readonly isSendCert: boolean;
   readonly isDepositP: boolean;
-}
-
-/** @name Type */
-export interface Type extends Enum {
-  readonly isP2Pkh: boolean;
-  readonly isP2Sh: boolean;
 }
 
 /** @name WithdrawRecord */

@@ -1,3 +1,5 @@
 export default {
-    types: {}
+    types: {
+        OraclePrice: 'u64'
+    }
 };

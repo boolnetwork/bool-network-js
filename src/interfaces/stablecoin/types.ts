@@ -2,7 +2,7 @@
 /* eslint-disable */
 
 import { Struct } from '@polkadot/types/codec';
-import { Bytes, bool, u64 } from '@polkadot/types/primitive';
+import { Bytes, u64 } from '@polkadot/types/primitive';
 import { AccountId, Balance, Moment } from '@polkadot/types/interfaces/runtime';
 
 /** @name AccountList */
@@ -28,7 +28,7 @@ export interface Bids extends Struct {
 /** @name Feed */
 export interface Feed extends Struct {
   readonly price: Balance;
-  readonly has: bool;
+  readonly _has: boolean;
 }
 
 /** @name List */

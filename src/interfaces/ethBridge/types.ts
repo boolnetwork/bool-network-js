@@ -37,7 +37,7 @@ export interface EthHeader extends Struct {
   readonly gas_limit: U256;
   readonly difficulty: U256;
   readonly seal: Vec<Bytes>;
-  readonly hash: Option<H256>;
+  readonly the_hash: Option<H256>;
 }
 
 export type PHANTOM_ETHBRIDGE = 'ethBridge';

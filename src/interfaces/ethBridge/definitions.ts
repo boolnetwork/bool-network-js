@@ -24,7 +24,7 @@ export default {
             gas_limit: 'U256',
             difficulty: 'U256',
             seal: 'Vec<Bytes>',
-            hash: 'Option<H256>'
+            the_hash: 'Option<H256>'
         },
         Bloom: '[u8; 256]'
     }

@@ -38,7 +38,7 @@ export default {
         },
         Feed: {
             price: 'Balance',
-            has: 'bool'
+            _has: 'boolean'
         }
     }
 };
