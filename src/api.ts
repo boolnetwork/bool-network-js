@@ -4,7 +4,7 @@ import { ApiOptions } from '@polkadot/api/types';
 import * as definitions from './interfaces/definitions';
 import boolJsonRpc from './interfaces/jsonrpc';
 
-export const CreateApi = async (provider: WsProvider) => {
+export const CreateApi = async (provider?: WsProvider) => {
     const boolTypes = Object.values(definitions).reduce((res, { types }): object => ({ ...res, ...types }), {});
 
     let boolOption: ApiOptions = {

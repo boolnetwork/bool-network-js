@@ -29,9 +29,12 @@
     "@polkadot/api": "^1.8.1"
   },
   "devDependencies": {
-    "@polkadot/typegen": "^1.8.1",
     "@polkadot/dev": "^0.32.17",
     "@polkadot/ts": "^0.3.6",
+    "@polkadot/typegen": "^1.8.1",
+    "@types/jest": "^25.1.5",
+    "jest": "^25.2.7",
+    "ts-jest": "^25.3.0",
     "ts-node": "^8.6.2",
     "typescript": "^3.8.2"
   },
