@@ -1,6 +1,6 @@
 {
   "name": "bool-network-js",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Bool Network js api",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -23,13 +23,13 @@
   "author": "abmatrix",
   "license": "ISC",
   "dependencies": {
-    "@polkadot/api": "^1.8.1"
+    "@polkadot/api": "1.8.1"
   },
   "devDependencies": {
-    "@polkadot/dev": "^0.32.17",
-    "@polkadot/ts": "^0.3.6",
-    "@polkadot/typegen": "^1.8.1",
-    "@types/jest": "^25.1.5",
+    "@polkadot/dev": "0.32.17",
+    "@polkadot/ts": "0.3.6",
+    "@polkadot/typegen": "1.8.1",
+    "@types/jest": "25.1.5",
     "jest": "^25.2.7",
     "ts-jest": "^25.3.0",
     "ts-node": "^8.6.2",
