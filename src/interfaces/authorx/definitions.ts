@@ -4,11 +4,11 @@ export default {
         isPendingExtrinsics: {
             params: [
                 {
-                    name: 'hash',
-                    type: 'Vec<Hash>'
+                    name: "hash",
+                    type: "Vec<Hash>"
                 }
             ],
-            type: 'Vec<bool>'
+            type: "Vec<bool>"
         }
     }
 };
