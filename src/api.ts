@@ -7,7 +7,7 @@ import boolJsonRpc from './interfaces/jsonrpc';
 export const CreateApi = async (provider?: WsProvider) => {
     const boolTypes = Object.values(definitions).reduce((res, { types }): object => ({ ...res, ...types }), {});
 
-    let boolOption: ApiOptions = {
+    const boolOption: ApiOptions = {
         types: {
             ...boolTypes
         },
