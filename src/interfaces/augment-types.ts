@@ -56,6 +56,7 @@ import { OraclePrice } from 'bool-network-js/interfaces/feed';
 import { Meta } from 'bool-network-js/interfaces/genericErc20';
 import { AccountList, Bids, Feed, List, PawnType, Time, Vault } from 'bool-network-js/interfaces/stablecoin';
 import { ChainKind, DepositDetail, TokenControl, TokenDetail, WithdrawDetail } from 'bool-network-js/interfaces/token';
+import { Pair } from 'bool-network-js/interfaces/uniswap';
 import { AuthorInfo, StatisticsInfo, WitnessProposal, WitnessType } from 'bool-network-js/interfaces/witness';
 
 declare module '@polkadot/types/types/registry' {
@@ -2175,5 +2176,8 @@ declare module '@polkadot/types/types/registry' {
     StatisticsInfo: StatisticsInfo;
     'Option<StatisticsInfo>': Option<StatisticsInfo>;
     'Vec<StatisticsInfo>': Vec<StatisticsInfo>;
+    Pair: Pair;
+    'Option<Pair>': Option<Pair>;
+    'Vec<Pair>': Vec<Pair>;
   }
 }

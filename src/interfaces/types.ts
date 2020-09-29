@@ -12,3 +12,4 @@ export * from './genericErc20/types';
 export * from './stablecoin/types';
 export * from './token/types';
 export * from './witness/types';
+export * from './uniswap/types';
