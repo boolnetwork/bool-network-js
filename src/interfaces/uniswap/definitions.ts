@@ -1,6 +1,6 @@
 export default {
     types: {
-        Pair: {
+        PairT: {
             token0: "Vec<u8>",
             token1: "Vec<u8>",
             // the pair address

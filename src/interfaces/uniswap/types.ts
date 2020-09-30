@@ -6,8 +6,8 @@ import { Bytes, U256, u32 } from '@polkadot/types/primitive';
 import { AccountId } from '@polkadot/types/interfaces/runtime';
 import { AmountType } from 'bool-network-js/interfaces/dex';
 
-/** @name Pair */
-export interface Pair extends Struct {
+/** @name PairT */
+export interface PairT extends Struct {
   readonly token0: Bytes;
   readonly token1: Bytes;
   readonly address: AccountId;
