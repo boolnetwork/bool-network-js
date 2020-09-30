@@ -95,6 +95,7 @@ export default {
             type: "Vec<(u64, u64, Vec<u64>)>"
         },
         depth: {
+            alias: ["dex_depth"],
             description: "Get the depth of trading pair",
             params: [
                 {
@@ -105,6 +106,7 @@ export default {
             type: "DepthInfo"
         },
         foo: {
+            alias: ["dex_foo"],
             description: "For test",
             params: [
                 {

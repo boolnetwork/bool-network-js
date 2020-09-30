@@ -23,12 +23,12 @@
   "author": "Bool Network",
   "license": "ISC",
   "dependencies": {
-    "@polkadot/api": "1.34.1"
+    "@polkadot/api": "2.0.1"
   },
   "devDependencies": {
-    "@polkadot/dev": "0.55.53",
-    "@polkadot/ts": "0.3.6",
-    "@polkadot/typegen": "1.34.1",
+    "@polkadot/dev": "0.55.55",
+    "@polkadot/ts": "0.3.48",
+    "@polkadot/typegen": "2.0.1",
     "@types/jest": "25.1.5",
     "jest": "^25.2.7",
     "ts-jest": "^25.3.0",

@@ -18,5 +18,60 @@ export default {
             klast: "U256",
         
         }
+    },
+    rpc:{
+        get_amounts_out:{
+            description: "return the amount you can get",
+            params: [
+                {
+                    name: "amountin",
+                    type: "u64"
+                },
+                {
+                    name: "path",
+                    type: "Vec<Vec<u8>>"
+                }
+            ],
+            type:"Vec<u64>"
+        },
+        get_amounts_in:{
+            description: "return the amount you should input",
+            params: [
+                {
+                    name: "amountout",
+                    type: "u64"
+                },
+                {
+                    name: "path",
+                    type: "Vec<Vec<u8>>"
+                }
+            ],
+            type:"Vec<u64>"
+        },
+        find_pairs:{
+            description:"return the pair you can get",
+            params:[
+                {
+                    name:"tokena",
+                    type:"Vec<u8>"
+                }
+            ],
+            type:"Vec<Vec<u8>>"
+        },
+        list_pairs:{
+            description:"return all the pairs that has been created",
+            type:"Vec<Vec<u8>>"
+        },
+        account_tokens_balances:{
+            description:"return the balances of tokens that a except account has",
+            params:[
+                {
+                    name:"acc",
+                    type:"AccountId"
+                }
+            ],
+            type:"Vec<(Vec<u8>,u64)>"
+        }
+
     }
 }
