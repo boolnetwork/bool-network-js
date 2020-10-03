@@ -60,6 +60,7 @@ export default {
         },
         list_pairs:{
             description:"return all the pairs that has been created",
+            params:[],
             type:"Vec<Vec<u8>>"
         },
         account_tokens_balances:{
