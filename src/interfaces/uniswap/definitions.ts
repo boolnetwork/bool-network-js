@@ -11,16 +11,14 @@ export default {
             reserve0: "AmountType",
             // total token1 in this reserve
             reserve1: "AmountType",
-        
             blocktimestamp_last: "u32",
             price0_cumulative_last: "U256",
             price1_cumulative_last: "U256",
-            klast: "U256",
-        
+            klast: "U256"
         }
     },
-    rpc:{
-        get_amounts_out:{
+    rpc: {
+        get_amounts_out: {
             description: "return the amount you can get",
             params: [
                 {
@@ -32,9 +30,9 @@ export default {
                     type: "Vec<Vec<u8>>"
                 }
             ],
-            type:"Vec<u64>"
+            type: "Vec<u64>"
         },
-        get_amounts_in:{
+        get_amounts_in: {
             description: "return the amount you should input",
             params: [
                 {
@@ -46,32 +44,32 @@ export default {
                     type: "Vec<Vec<u8>>"
                 }
             ],
-            type:"Vec<u64>"
+            type: "Vec<u64>"
         },
-        find_pairs:{
-            description:"return the pair you can get",
-            params:[
+        find_pairs: {
+            description: "return the pair you can get",
+            params: [
                 {
-                    name:"tokena",
-                    type:"Vec<u8>"
+                    name: "tokena",
+                    type: "Vec<u8>"
                 }
             ],
-            type:"Vec<Vec<u8>>"
+            type: "Vec<Vec<u8>>"
         },
-        list_pairs:{
-            description:"return all the pairs that has been created",
-            params:[],
-            type:"Vec<Vec<u8>>"
+        list_pairs: {
+            description: "return all the pairs that has been created",
+            params: [],
+            type: "Vec<Vec<u8>>"
         },
-        account_tokens_balances:{
-            description:"return the balances of tokens that a except account has",
-            params:[
+        account_tokens_balances: {
+            description: "return the balances of tokens that a except account has",
+            params: [
                 {
-                    name:"acc",
-                    type:"AccountId"
+                    name: "acc",
+                    type: "AccountId"
                 }
             ],
-            type:"Vec<(Vec<u8>,u64)>"
+            type: "Vec<(Vec<u8>,u64)>"
         }
 
     }
