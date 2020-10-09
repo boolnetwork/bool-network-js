@@ -52,7 +52,7 @@ import { Authorities, AuthoritiesChangeType, CitaHeader } from 'bool-network-js/
 import { DaoList, MakerProposal } from 'bool-network-js/interfaces/dao';
 import { AmountType, BidDetailT, BidT, CancelOrMatch, DepthInfo, DepthItem, MultiNodeIndex, Node, NodeIndex, OrderInfo, OrderPair, OrderStatus, OrderType, PerMill, PriceType, RegionT } from 'bool-network-js/interfaces/dex';
 import { ActionRecord, BestHeaderT, Bloom, EthHeader } from 'bool-network-js/interfaces/ethBridge';
-import { OraclePrice } from 'bool-network-js/interfaces/feed';
+import { OraclePrice, TimeWrapOf } from 'bool-network-js/interfaces/feed';
 import { Meta } from 'bool-network-js/interfaces/genericErc20';
 import { AccountList, Bids, Feed, List, PawnType, Time, Vault } from 'bool-network-js/interfaces/stablecoin';
 import { ChainKind, DepositDetail, TokenControl, TokenDetail, WithdrawDetail } from 'bool-network-js/interfaces/token';
@@ -1782,6 +1782,9 @@ declare module '@polkadot/types/types/registry' {
     'Compact<OraclePrice>': Compact<OraclePrice>;
     'Option<OraclePrice>': Option<OraclePrice>;
     'Vec<OraclePrice>': Vec<OraclePrice>;
+    TimeWrapOf: TimeWrapOf;
+    'Option<TimeWrapOf>': Option<TimeWrapOf>;
+    'Vec<TimeWrapOf>': Vec<TimeWrapOf>;
     Meta: Meta;
     'Option<Meta>': Option<Meta>;
     'Vec<Meta>': Vec<Meta>;
