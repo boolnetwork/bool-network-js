@@ -70,6 +70,21 @@ export default {
                 }
             ],
             type: "Vec<(Vec<u8>,u64)>"
+        },
+        get_reserves:{
+            description: "return reserves",
+            params:[
+                {
+                    name:"tokena",
+                    type:"Vec<u8>"
+                },
+                {
+                    name:"tokenb",
+                    type:"Vec<u8>"
+                },
+            ],
+            type:"(u64,u64)"
+
         }
 
     }
