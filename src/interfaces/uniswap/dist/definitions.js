@@ -53,7 +53,7 @@ exports["default"] = {
             params: [
                 {
                     name: "tokena",
-                    type: "Vec<u8>"
+                    type: "Bytes"
                 }
             ],
             type: "Vec<Vec<u8>>"
