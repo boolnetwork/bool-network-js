@@ -59,7 +59,7 @@ export default {
         list_pairs: {
             description: "return all the pairs that has been created",
             params: [],
-            type: "Vec<Vec<u8>>"
+            type: "Vec<(Vec<u8>,Vec<u8>)>"
         },
         account_tokens_balances: {
             description: "return the balances of tokens that a except account has",
