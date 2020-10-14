@@ -1,42 +1,42 @@
 {
-    "name": "bool-network-js",
-    "version": "0.3.1",
-    "description": "Bool Network js api",
-    "main": "lib/index.js",
-    "types": "lib/index.d.ts",
-    "scripts": {
-        "build": "yarn generate:defs && tsc",
-        "generate:defs": "ts-node --skip-project node_modules/.bin/polkadot-types-from-defs --package bool-network-js/interfaces --input ./src/interfaces",
-        "format": "prettier --write \"src/**/*.ts\"",
-        "lint": "tslint -p tsconfig.json",
-        "test": "jest --config jestconfig.json",
-        "prepare": "npm run build",
-        "prepublishOnly": "npm test && npm run lint",
-        "preversion": "npm run lint",
-        "version": "npm run format && git add -A src",
-        "postversion": "git push && git push --tags"
-    },
-    "keywords": [
-        "Bool Network",
-        "Substrate"
-    ],
-    "author": "Bool Network",
-    "license": "ISC",
-    "dependencies": {
-        "@polkadot/api": "2.0.1"
-    },
-    "devDependencies": {
-        "@polkadot/dev": "0.55.55",
-        "@polkadot/ts": "0.3.48",
-        "@polkadot/typegen": "2.0.1",
-        "@types/jest": "25.1.5",
-        "jest": "^25.2.7",
-        "ts-jest": "^25.3.0",
-        "ts-node": "^8.6.2",
-        "typescript": "^3.8.2",
-        "tslint": "^6.1.1"
-    },
-    "files": [
-        "lib/**/*"
-    ]
+  "name": "bool-network-js",
+  "version": "0.3.2",
+  "description": "Bool Network js api",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "yarn generate:defs && tsc",
+    "generate:defs": "ts-node --skip-project node_modules/.bin/polkadot-types-from-defs --package bool-network-js/interfaces --input ./src/interfaces",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json",
+    "test": "jest --config jestconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "keywords": [
+    "Bool Network",
+    "Substrate"
+  ],
+  "author": "Bool Network",
+  "license": "ISC",
+  "dependencies": {
+    "@polkadot/api": "2.0.1"
+  },
+  "devDependencies": {
+    "@polkadot/dev": "0.55.55",
+    "@polkadot/ts": "0.3.48",
+    "@polkadot/typegen": "2.0.1",
+    "@types/jest": "25.1.5",
+    "jest": "^25.2.7",
+    "ts-jest": "^25.3.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.2",
+    "tslint": "^6.1.1"
+  },
+  "files": [
+    "lib/**/*"
+  ]
 }
