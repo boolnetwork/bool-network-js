@@ -54,6 +54,7 @@ import { AmountType, BidDetailT, BidT, CancelOrMatch, DepthInfo, DepthItem, Mult
 import { ActionRecord, BestHeaderT, Bloom, EthHeader } from 'bool-network-js/interfaces/ethBridge';
 import { OraclePrice, TimeWrapOf } from 'bool-network-js/interfaces/feed';
 import { Meta } from 'bool-network-js/interfaces/genericErc20';
+import { DealId, OrderId } from 'bool-network-js/interfaces/market';
 import { AccountList, Bids, Feed, List, PawnType, Time, Vault } from 'bool-network-js/interfaces/stablecoin';
 import { ChainKind, DepositDetail, TokenControl, TokenDetail, WithdrawDetail } from 'bool-network-js/interfaces/token';
 import { PairT } from 'bool-network-js/interfaces/uniswap';
@@ -1839,5 +1840,11 @@ declare module '@polkadot/types/types/registry' {
     PairT: PairT;
     'Option<PairT>': Option<PairT>;
     'Vec<PairT>': Vec<PairT>;
+    DealId: DealId;
+    'Option<DealId>': Option<DealId>;
+    'Vec<DealId>': Vec<DealId>;
+    OrderId: OrderId;
+    'Option<OrderId>': Option<OrderId>;
+    'Vec<OrderId>': Vec<OrderId>;
   }
 }

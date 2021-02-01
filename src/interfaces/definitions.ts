@@ -9,4 +9,5 @@ export { default as genericErc20 } from "./genericErc20/definitions";
 export { default as stablecoin } from "./stablecoin/definitions";
 export { default as token } from "./token/definitions";
 export { default as witness } from "./witness/definitions";
-export {default as uniswap} from './uniswap/definitions';
+export { default as uniswap } from './uniswap/definitions';
+export { default as market } from './market/definitions';
