@@ -1,9 +1,8 @@
 // Auto-generated via `yarn polkadot-types-from-defs`, do not edit
 /* eslint-disable */
 
-import { Struct } from '@polkadot/types/codec';
-import { Bytes, bool, u64 } from '@polkadot/types/primitive';
-import { AccountId, Balance, Hash, Moment } from '@polkadot/types/interfaces/runtime';
+import type { Bytes, Struct, bool, u64 } from '@polkadot/types-codec';
+import type { AccountId, Balance, Hash, Moment } from '@polkadot/types/interfaces/runtime';
 
 /** @name DaoList */
 export interface DaoList extends Struct {

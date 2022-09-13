@@ -1,15 +1,15 @@
 // Auto-generated via `yarn polkadot-types-from-defs`, do not edit
 /* eslint-disable */
 
-import { Enum, Struct } from '@polkadot/types/codec';
-import { Bytes, u128, u64 } from '@polkadot/types/primitive';
-import { AccountId } from '@polkadot/types/interfaces/runtime';
+import type { Bytes, Enum, Struct, u128, u64 } from '@polkadot/types-codec';
+import type { AccountId } from '@polkadot/types/interfaces/runtime';
 
 /** @name ChainKind */
 export interface ChainKind extends Enum {
   readonly isBool: boolean;
   readonly isEth: boolean;
   readonly isCita: boolean;
+  readonly type: 'Bool' | 'Eth' | 'Cita';
 }
 
 /** @name DepositDetail */
@@ -26,6 +26,7 @@ export interface DepositDetail extends Struct {
 export interface TokenControl extends Enum {
   readonly isFree: boolean;
   readonly isLock: boolean;
+  readonly type: 'Free' | 'Lock';
 }
 
 /** @name TokenDetail */

@@ -1,10 +1,9 @@
 // Auto-generated via `yarn polkadot-types-from-defs`, do not edit
 /* eslint-disable */
 
-import { ITuple } from '@polkadot/types/types';
-import { Compact, Enum, Struct, Vec } from '@polkadot/types/codec';
-import { Bytes, bool, i32, u128, u32, u64 } from '@polkadot/types/primitive';
-import { AccountId, BlockNumber, H160, H256 } from '@polkadot/types/interfaces/runtime';
+import type { Bytes, Compact, Enum, Struct, Vec, bool, i32, u128, u32, u64 } from '@polkadot/types-codec';
+import type { ITuple } from '@polkadot/types-codec/types';
+import type { AccountId, BlockNumber, H160, H256 } from '@polkadot/types/interfaces/runtime';
 
 /** @name AddressHash */
 export interface AddressHash extends H160 {}
@@ -75,6 +74,7 @@ export interface CandidateTx extends Struct {
 export interface NetWork extends Enum {
   readonly isMain: boolean;
   readonly isTest: boolean;
+  readonly type: 'Main' | 'Test';
 }
 
 /** @name OutPoint */
@@ -106,8 +106,9 @@ export interface PartialMerkleTreeForTransport extends Struct {
 
 /** @name ScriptType */
 export interface ScriptType extends Enum {
-  readonly isP2Pkh: boolean;
-  readonly isP2Sh: boolean;
+  readonly isP2pkh: boolean;
+  readonly isP2sh: boolean;
+  readonly type: 'P2pkh' | 'P2sh';
 }
 
 /** @name TransactionInput */
@@ -140,6 +141,7 @@ export interface TxType extends Enum {
   readonly isRegisterDeposit: boolean;
   readonly isSendCert: boolean;
   readonly isDepositP: boolean;
+  readonly type: 'Withdraw' | 'Deposit' | 'Register' | 'RegisterDeposit' | 'SendCert' | 'DepositP';
 }
 
 /** @name UTXO */

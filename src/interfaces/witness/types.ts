@@ -1,10 +1,9 @@
 // Auto-generated via `yarn polkadot-types-from-defs`, do not edit
 /* eslint-disable */
 
-import { ITuple } from '@polkadot/types/types';
-import { BTreeSet, Enum, Struct, Vec } from '@polkadot/types/codec';
-import { Bytes, bool, u32, u64 } from '@polkadot/types/primitive';
-import { H160 } from '@polkadot/types/interfaces/runtime';
+import type { BTreeSet, Bytes, Enum, Struct, Vec, bool, u32, u64 } from '@polkadot/types-codec';
+import type { ITuple } from '@polkadot/types-codec/types';
+import type { H160 } from '@polkadot/types/interfaces/runtime';
 
 /** @name AuthorInfo */
 export interface AuthorInfo extends Struct {
@@ -33,6 +32,7 @@ export interface WitnessType extends Enum {
   readonly isAdmin: boolean;
   readonly isSingle: boolean;
   readonly asSingle: Bytes;
+  readonly type: 'Admin' | 'Single';
 }
 
 export type PHANTOM_WITNESS = 'witness';
