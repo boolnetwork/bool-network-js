@@ -1,8 +1,7 @@
 // Auto-generated via `yarn polkadot-types-from-defs`, do not edit
 /* eslint-disable */
 
-import { Struct } from '@polkadot/types/codec';
-import { Bytes } from '@polkadot/types/primitive';
+import type { Bytes, Struct } from '@polkadot/types-codec';
 
 /** @name Meta */
 export interface Meta extends Struct {

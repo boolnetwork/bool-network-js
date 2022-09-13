@@ -1,11 +1,10 @@
 // Auto-generated via `yarn polkadot-types-from-defs`, do not edit
 /* eslint-disable */
 
-import { ITuple } from '@polkadot/types/types';
-import { Enum, Option, Struct, Vec } from '@polkadot/types/codec';
-import { Bytes, u128, u32, u64 } from '@polkadot/types/primitive';
-import { AccountId, BlockNumber, Permill } from '@polkadot/types/interfaces/runtime';
-import { Bid } from '@polkadot/types/interfaces/society';
+import type { Bytes, Enum, Option, Struct, Vec, u128, u32, u64 } from '@polkadot/types-codec';
+import type { ITuple } from '@polkadot/types-codec/types';
+import type { AccountId, BlockNumber, Permill } from '@polkadot/types/interfaces/runtime';
+import type { Bid } from '@polkadot/types/interfaces/society';
 
 /** @name AmountType */
 export interface AmountType extends u128 {}
@@ -33,6 +32,7 @@ export interface BidT extends Struct {
 export interface CancelOrMatch extends Enum {
   readonly isMatch: boolean;
   readonly isCancel: boolean;
+  readonly type: 'Match' | 'Cancel';
 }
 
 /** @name DepthInfo */
@@ -91,12 +91,14 @@ export interface OrderStatus extends Enum {
   readonly isValid: boolean;
   readonly isCanceled: boolean;
   readonly isFinished: boolean;
+  readonly type: 'Valid' | 'Canceled' | 'Finished';
 }
 
 /** @name OrderType */
 export interface OrderType extends Enum {
   readonly isBuy: boolean;
   readonly isSell: boolean;
+  readonly type: 'Buy' | 'Sell';
 }
 
 /** @name PerMill */

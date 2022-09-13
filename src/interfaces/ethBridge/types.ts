@@ -1,9 +1,8 @@
 // Auto-generated via `yarn polkadot-types-from-defs`, do not edit
 /* eslint-disable */
 
-import { Option, Struct, U8aFixed, Vec } from '@polkadot/types/codec';
-import { Bytes, U256, u64 } from '@polkadot/types/primitive';
-import { H160, H256 } from '@polkadot/types/interfaces/runtime';
+import type { Bytes, Option, Struct, U256, U8aFixed, Vec, u64 } from '@polkadot/types-codec';
+import type { H160, H256 } from '@polkadot/types/interfaces/runtime';
 
 /** @name ActionRecord */
 export interface ActionRecord extends Struct {

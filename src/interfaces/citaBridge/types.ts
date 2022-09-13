@@ -1,10 +1,9 @@
 // Auto-generated via `yarn polkadot-types-from-defs`, do not edit
 /* eslint-disable */
 
-import { ITuple } from '@polkadot/types/types';
-import { Enum, Struct, Vec } from '@polkadot/types/codec';
-import { Bytes, u64 } from '@polkadot/types/primitive';
-import { H160 } from '@polkadot/types/interfaces/runtime';
+import type { Bytes, Enum, Struct, Vec, u64 } from '@polkadot/types-codec';
+import type { ITuple } from '@polkadot/types-codec/types';
+import type { H160 } from '@polkadot/types/interfaces/runtime';
 
 /** @name Authorities */
 export interface Authorities extends Enum {
@@ -12,6 +11,7 @@ export interface Authorities extends Enum {
   readonly asSameAs: u64;
   readonly isNewList: boolean;
   readonly asNewList: ITuple<[Vec<H160>, AuthoritiesChangeType]>;
+  readonly type: 'SameAs' | 'NewList';
 }
 
 /** @name AuthoritiesChangeType */
@@ -21,6 +21,7 @@ export interface AuthoritiesChangeType extends Enum {
   readonly isDeleteAuthority: boolean;
   readonly asDeleteAuthority: H160;
   readonly isInit: boolean;
+  readonly type: 'AddAuthority' | 'DeleteAuthority' | 'Init';
 }
 
 /** @name CitaHeader */

@@ -1,10 +1,9 @@
 // Auto-generated via `yarn polkadot-types-from-defs`, do not edit
 /* eslint-disable */
 
-import { Struct } from '@polkadot/types/codec';
-import { Bytes, U256, u32 } from '@polkadot/types/primitive';
-import { AccountId } from '@polkadot/types/interfaces/runtime';
-import { AmountType } from 'bool-network-js/interfaces/dex';
+import type { Bytes, Struct, U256, u32 } from '@polkadot/types-codec';
+import type { AccountId } from '@polkadot/types/interfaces/runtime';
+import type { AmountType } from 'bool-network-js/interfaces/dex';
 
 /** @name PairT */
 export interface PairT extends Struct {

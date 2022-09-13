@@ -1,9 +1,8 @@
 // Auto-generated via `yarn polkadot-types-from-defs`, do not edit
 /* eslint-disable */
 
-import { Struct } from '@polkadot/types/codec';
-import { Bytes, u64 } from '@polkadot/types/primitive';
-import { AccountId, Balance, Moment } from '@polkadot/types/interfaces/runtime';
+import type { Bytes, Struct, u64 } from '@polkadot/types-codec';
+import type { AccountId, Balance, Moment } from '@polkadot/types/interfaces/runtime';
 
 /** @name AccountList */
 export interface AccountList extends Struct {
